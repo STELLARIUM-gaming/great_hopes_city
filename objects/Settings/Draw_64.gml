@@ -514,7 +514,7 @@ draw_set_valign(fa_top);
 	}*/
 } 
 else{
-if (esc_pau) and !global.map and !global.shop and room != rm_end
+if (esc_pau) and !global.map and !global.shop and room != rm_end and global.dialog_end
 	{
 		part_system_depth(daycycle.weather, 1000);
 		global.pause = !global.pause;
