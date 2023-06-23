@@ -65,8 +65,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Shop",
-    "path": "texturegroups/Shop",
+    "name": "Center",
+    "path": "texturegroups/Center",
   },
   "type": 0,
   "VTile": false,

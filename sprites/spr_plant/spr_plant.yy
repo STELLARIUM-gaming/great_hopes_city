@@ -65,8 +65,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Tukhlyanka",
-    "path": "texturegroups/Tukhlyanka",
+    "name": "Center",
+    "path": "texturegroups/Center",
   },
   "type": 0,
   "VTile": false,

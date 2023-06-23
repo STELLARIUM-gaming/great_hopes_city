@@ -90,8 +90,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "UI",
-    "path": "texturegroups/UI",
+    "name": "Other",
+    "path": "texturegroups/Other",
   },
   "type": 0,
   "VTile": false,

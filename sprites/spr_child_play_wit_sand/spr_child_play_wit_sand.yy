@@ -207,8 +207,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Default",
-    "path": "texturegroups/Default",
+    "name": "Tukhlyanka",
+    "path": "texturegroups/Tukhlyanka",
   },
   "type": 0,
   "VTile": false,

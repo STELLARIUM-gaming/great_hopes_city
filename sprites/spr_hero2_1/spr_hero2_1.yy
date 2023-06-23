@@ -95,8 +95,8 @@
   "swatchColours": null,
   "swfPrecision": 2.525,
   "textureGroupId": {
-    "name": "Other",
-    "path": "texturegroups/Other",
+    "name": "Center",
+    "path": "texturegroups/Center",
   },
   "type": 0,
   "VTile": false,
