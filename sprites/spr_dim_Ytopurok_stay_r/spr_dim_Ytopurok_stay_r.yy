@@ -59,7 +59,7 @@
   "origin": 9,
   "parent": {
     "name": "Ytopurok",
-    "path": "folders/Sprites/Player_spr/Ytopurok.yy",
+    "path": "folders/Players_obj/Player_spr/Ytopurok.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

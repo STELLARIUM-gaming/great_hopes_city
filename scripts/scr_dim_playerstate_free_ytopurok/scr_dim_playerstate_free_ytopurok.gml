@@ -8,7 +8,7 @@ if(status = STATUS.ACTIVE){
 	directy = keyup - keydown;
 
 	// змешення швидкості ходьби по діагоналі
-	if( directy !=0 && directx !=0 ) {spd=spd*0.8; }
+	if( directy !=0 && directx !=0 ) {spd=spd*1; }
 	
 	hsp = directx*(spd+krok);
 	vsp = directy*(spd+krok)*0.5;
@@ -23,13 +23,6 @@ if(status = STATUS.ACTIVE){
 		y -= vsp;
 	}
 	// move sound was here
-
-	//горизонтальна колізія
- /*	if(place_meeting(x + hsp, y, obj_invisiblewall)){
-	//	while(!place_meeting(x+sign(hsp), y, obj_invisiblewall))
-	//		x += sign(hsp);
-		hsp = 0;
-	}*/
 	if(place_meeting(x + hsp, y, obj_pr_NPC_move) or place_meeting(x + hsp, y, obj_pr_NPC_back)){
 		if (status = STATUS.ACTIVE){last_active = true}
 		status = STATUS.NONE;
@@ -37,15 +30,6 @@ if(status = STATUS.ACTIVE){
 		hsp = 0;
 	}
 	
-	
-
-	//вертикальна колізія
-	if(place_meeting(x, y + vsp, obj_invisiblewall)){
-		while(!place_meeting(x, y + sign(vsp) , obj_invisiblewall))
-			y += sign(vsp);
-		vsp = 0;
-	}
-
 }
 
 sprit="Ytopurok";

@@ -33,7 +33,7 @@
   "origin": 7,
   "parent": {
     "name": "Krus",
-    "path": "folders/Sprites/Player_spr/Krus.yy",
+    "path": "folders/Players_obj/Player_spr/Krus.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

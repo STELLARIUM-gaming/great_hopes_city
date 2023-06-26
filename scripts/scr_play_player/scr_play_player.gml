@@ -1,3 +1,30 @@
+#region Відповідає за зміну статуса гравця і його оповедінку при відкритому магазі і тд
+function scr_play_playernum(){
+	//якщо магазин або діалог відкритий і тд, гравець нерухомий
+	if (global.shop or global.map or !global.dialog_end or global.diary) {
+	if lastmove = 0 sprite_index = asset_get_index("spr_dim_" + sprit + "_stay_r");
+	else sprite_index = asset_get_index("spr_dim_" + sprit + "_stay_l");
+	in_place = 0;
+	exit;
+	} 
+
+	//система зміни статусу гравця
+	if (global.dialog_end and !global.map and !global.shop and !global.dialogue_move)
+	{
+		switch (playernum){
+			case 1:
+				if(keyboard_check(ord("1"))) {status = STATUS.ACTIVE; last_active=true;}
+				if(keyboard_check(ord("2"))) {status = STATUS.PASSIVE;last_active=false;}
+			break;
+			case 2:
+				if(keyboard_check(ord("1"))) {status = STATUS.PASSIVE; last_active=false}
+				if(keyboard_check(ord("2"))) {status = STATUS.ACTIVE; last_active=true;}
+			break;
+		}
+	}
+}
+#endregion
+
 function scr_play_player(){
 event_inherited();
 if (!in_sequence){
@@ -10,6 +37,7 @@ key_room_go = keyboard_check(ord("E"));
 key_diary = keyboard_check(ord("N")) or keyboard_check(ord("T"));
 //key_smoke =  keyboard_check(ord("Y"));
 }
+
 
 if (playernum = 1)
 {
@@ -27,20 +55,7 @@ var ch = camera_get_view_height(cam);
 view_set_visible(0, false);
 view_set_visible(1, true);
 camera_set_view_target(cam, obj_dim_player2);}
-/*else{
-cam = view_get_camera(1);
-cw = camera_get_view_width(cam);
-ch = camera_get_view_height(cam);
-view_set_visible(0, false);
-view_set_visible(1, true);
-}*/
-// smoking
-//if key_smoke
-//{
-//	obj_dim_player1.state=PLAYERSTATE.SMOKE;
-//	obj_dim_player2.state=PLAYERSTATE.SMOKE;
-	
-//}
+
 // movement sound
 scr_move_sound()
 

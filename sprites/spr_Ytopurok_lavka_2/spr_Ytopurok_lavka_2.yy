@@ -60,7 +60,7 @@
   "origin": 9,
   "parent": {
     "name": "Lawki",
-    "path": "folders/Sprites/Player_spr/Lawki.yy",
+    "path": "folders/Players_obj/Player_spr/Lawki.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

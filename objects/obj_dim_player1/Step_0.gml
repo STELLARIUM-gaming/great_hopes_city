@@ -1,22 +1,5 @@
 //УТОПИРОК
-//якщо магазин або діалог відкритий, гравець нерухомий
-
-if (global.shop or global.map or !global.dialog_end or global.diary) {
-	if lastmove = 0 sprite_index = asset_get_index("spr_dim_" + sprit + "_stay_r");
-	else sprite_index = asset_get_index("spr_dim_" + sprit + "_stay_l");
-//	if (audio_is_playing(s_walk)) audio_stop_sound(s_walk);
-//	if (audio_is_playing(snd_run)) audio_stop_sound(snd_run);
-	in_place = 0;
-	exit;
-} 
-
-//система зміни статусу гравця
-if global.dialog_end and !global.map and !global.shop and !global.dialogue_move
-{
-if(keyboard_check(ord("1"))) {status = STATUS.ACTIVE; last_active=true;}
-if(keyboard_check(ord("2"))) {status = STATUS.PASSIVE;last_active=false;}
-}
-
+scr_play_playernum();//Відповідає за зміну статуса гравця і його оповедінку при відкритому магазі і тд
 
 switch(status){
 	case STATUS.ACTIVE	: scr_play_player()   ; break;
@@ -34,7 +17,6 @@ if (global.dialogue_move = true){
 		last_active=true;	
 	}
 	// переміщення у задані координати із заданою швидкістю
-	//mp_linear_step(xsd, ysd, 2, false);
 	mp_potential_step(xsd,ysd, 2, false);
 	// при досягненні визначеної координати
 	if ( x = xsd and y = ysd  ) 
