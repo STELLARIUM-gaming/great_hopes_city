@@ -1,10 +1,16 @@
 #region Відповідає за зміну статуса гравця і його оповедінку при відкритому магазі і тд
 function scr_play_playernum(){
 	//якщо магазин або діалог відкритий і тд, гравець нерухомий
-	if (global.shop or global.map or !global.dialog_end or global.diary) {
-	if lastmove = 0 sprite_index = asset_get_index("spr_dim_" + sprit + "_stay_r");
-	else sprite_index = asset_get_index("spr_dim_" + sprit + "_stay_l");
-	in_place = 0;
+	if (global.shop or global.map or !global.dialog_end or global.diary) 
+	{
+		if (lastmove = 0) 
+		{
+			sprite_index = asset_get_index("spr_dim_" + sprit + "_stay_r");
+		}
+		else {
+				sprite_index = asset_get_index("spr_dim_" + sprit + "_stay_l");
+				in_place = 0;
+			}
 	exit;
 	} 
 
@@ -25,6 +31,7 @@ function scr_play_playernum(){
 }
 #endregion
 
+#region Відповідає за управління персонажем
 function scr_play_player(){
 event_inherited();
 if (!in_sequence){
@@ -38,8 +45,15 @@ key_diary = keyboard_check(ord("N")) or keyboard_check(ord("T"));
 //key_smoke =  keyboard_check(ord("Y"));
 }
 
-
 if (playernum = 1)
+{
+	obj_camera_main.follow = obj_dim_player1;
+}
+else 
+{
+	obj_camera_main.follow = obj_dim_player2;
+}
+/*if (playernum = 1)
 {
 var cam = view_get_camera(0);
 var cw = camera_get_view_width(cam);
@@ -54,10 +68,11 @@ var cw = camera_get_view_width(cam);
 var ch = camera_get_view_height(cam);
 view_set_visible(0, false);
 view_set_visible(1, true);
-camera_set_view_target(cam, obj_dim_player2);}
+camera_set_view_target(cam, obj_dim_player2);}*/
 
 // movement sound
 scr_move_sound()
 
 
 }
+#endregion

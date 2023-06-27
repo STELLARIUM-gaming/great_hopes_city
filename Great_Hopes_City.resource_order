@@ -1226,6 +1226,7 @@
     {"name":"rm_cinema_inside","order":1,"path":"rooms/rm_cinema_inside/rm_cinema_inside.yy",},
     {"name":"spr_dumbbells3","order":4,"path":"sprites/spr_dumbbells3/spr_dumbbells3.yy",},
     {"name":"spr_ic_Pank","order":16,"path":"sprites/spr_ic_Pank/spr_ic_Pank.yy",},
+    {"name":"obj_camera_main","order":6,"path":"objects/obj_camera_main/obj_camera_main.yy",},
     {"name":"spr_task1_ukr","order":5,"path":"sprites/spr_task1_ukr/spr_task1_ukr.yy",},
     {"name":"spr_romb_left","order":15,"path":"sprites/spr_romb_left/spr_romb_left.yy",},
     {"name":"sp_doner_eng01","order":1,"path":"sprites/sp_doner_eng01/sp_doner_eng01.yy",},

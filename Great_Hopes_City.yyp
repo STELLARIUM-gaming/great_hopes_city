@@ -9,7 +9,7 @@
     "children": [],
     "name": "Default",
   },
-  "defaultScriptType": 0,
+  "defaultScriptType": 1,
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Animation Curves","folderPath":"folders/Animation Curves.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Battle_system","folderPath":"folders/Battle_system.yy",},
@@ -1326,6 +1326,7 @@
     {"id":{"name":"spr_bomz_ssuklo","path":"sprites/spr_bomz_ssuklo/spr_bomz_ssuklo.yy",},},
     {"id":{"name":"spr_dumbbells3","path":"sprites/spr_dumbbells3/spr_dumbbells3.yy",},},
     {"id":{"name":"spr_ic_Pank","path":"sprites/spr_ic_Pank/spr_ic_Pank.yy",},},
+    {"id":{"name":"obj_camera_main","path":"objects/obj_camera_main/obj_camera_main.yy",},},
     {"id":{"name":"spr_task1_ukr","path":"sprites/spr_task1_ukr/spr_task1_ukr.yy",},},
     {"id":{"name":"spr_romb_left","path":"sprites/spr_romb_left/spr_romb_left.yy",},},
     {"id":{"name":"sp_doner_eng01","path":"sprites/sp_doner_eng01/sp_doner_eng01.yy",},},
