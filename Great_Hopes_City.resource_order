@@ -3340,6 +3340,7 @@
     {"name":"spr_banana","order":2,"path":"sprites/spr_banana/spr_banana.yy",},
     {"name":"obj_seq_krus_stepBack","order":7,"path":"objects/obj_seq_krus_stepBack/obj_seq_krus_stepBack.yy",},
     {"name":"spr_buy_Krus_tiket_2_R","order":11,"path":"sprites/spr_buy_Krus_tiket_2_R/spr_buy_Krus_tiket_2_R.yy",},
+    {"name":"obj_manager_new_pause","order":9,"path":"objects/obj_manager_new_pause/obj_manager_new_pause.yy",},
     {"name":"spr_tolkan","order":7,"path":"sprites/spr_tolkan/spr_tolkan.yy",},
     {"name":"spr_an_Tyhlia_eng","order":6,"path":"sprites/spr_an_Tyhlia_eng/spr_an_Tyhlia_eng.yy",},
     {"name":"spr_press_re_night","order":2,"path":"sprites/spr_press_re_night/spr_press_re_night.yy",},

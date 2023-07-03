@@ -1,4 +1,4 @@
-
+exit;
 //if(!global.pause) exit;
 esc_pau = keyboard_check_pressed(vk_escape);
 

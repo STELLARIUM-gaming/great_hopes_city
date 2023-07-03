@@ -3,8 +3,8 @@
   "resourceVersion": "1.0",
   "name": "snd_klik_4",
   "audioGroupId": {
-    "name": "audiogroup_default",
-    "path": "audiogroups/audiogroup_default",
+    "name": "shop_diary_dialogs",
+    "path": "audiogroups/shop_diary_dialogs",
   },
   "bitDepth": 1,
   "bitRate": 128,
