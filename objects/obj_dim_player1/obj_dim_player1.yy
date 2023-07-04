@@ -43,6 +43,9 @@
   "properties": [
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"walkspd","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"2","varType":1,},
     {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"runspd","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"3","varType":1,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"collisionSpeed","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"3","varType":1,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"sprit","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"Ytopurok","varType":2,},
+    {"resourceType":"GMObjectProperty","resourceVersion":"1.0","name":"buing_spr","filters":[],"listItems":[],"multiselect":false,"rangeEnabled":false,"rangeMax":10.0,"rangeMin":0.0,"value":"spr_buy_Ytopur_tiket_2","varType":5,},
   ],
   "solid": false,
   "spriteId": {
