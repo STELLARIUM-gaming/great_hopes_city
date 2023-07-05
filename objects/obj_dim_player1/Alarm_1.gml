@@ -1,4 +1,4 @@
-/// @description Insert description here
+/// @description Натикання на НПС
 if (last_active)
 {
 	status=STATUS.ACTIVE;

@@ -23,25 +23,9 @@ if(status = STATUS.ACTIVE){
 	y -= vsp
 	}
 	
-	//////////ЗВУКИ ХОДЬБИ//////////////
-/*	if (hsp!= 0 or vsp != 0){
-		
-		
-	if (run == false or InRoomMode = true){ 
-			if !audio_is_playing(snd_walk) audio_play_sound(snd_walk,0,0,global.player_gain);
-			if audio_is_playing(snd_run) audio_stop_sound(snd_run);
-	} 
-	else if(run == true and InRoomMode = false){
-		if !audio_is_playing(snd_run) audio_play_sound(snd_run,0,0,global.player_gain);
-		if audio_is_playing(snd_walk) audio_stop_sound(snd_walk);
-	}
-	}else{
-		audio_stop_sound(snd_walk);
-		audio_stop_sound(snd_run);
-	}
-	*/
+
 	//////////////////////////////////////
-	//горизонтальна колізія
+	//Натикання на НПС/колізія
 	if(place_meeting(x + hsp, y, obj_pr_NPC_move) or place_meeting(x + hsp, y, obj_pr_NPC_back)){
 		if (status = STATUS.ACTIVE){last_active = true}
 		status = STATUS.NONE;
@@ -49,14 +33,8 @@ if(status = STATUS.ACTIVE){
 		hsp = 0;
 	}
 
-	//вертикальна колізія
-	if(place_meeting(x, y + vsp, obj_invisiblewall)){
-		while(!place_meeting(x, y + sign(vsp) , obj_invisiblewall))
-			y += sign(vsp);
-		vsp = 0;
-	}
+	
 }
-
 
 sprit="Krus";
 
@@ -77,10 +55,6 @@ if (keyboard_check(vk_space) and x>xprevious) {sprite_index =asset_get_index ("s
 if (keyboard_check(vk_space) and x<xprevious) {sprite_index =asset_get_index ("spr_dim_" + sprit +"_run_left");lastmove = 1;}
 }
 
-//if(global.dialogue_move = false){
-//	if (x==xprevious && y==yprevious && lastmove ==0) {sprite_index = asset_get_index("spr_dim_" + sprit + "_stay_r"); s_ind=0;}
-//	if (x==xprevious && y==yprevious && lastmove ==1) {sprite_index = asset_get_index("spr_dim_" + sprit + "_stay_l"); s_ind=0;}
-//}	
 if (x==xprevious && y==yprevious)
 {
 	if (lastmove == 0) {sprite_index = asset_get_index("spr_dim_" + sprit + "_stay_r"); }

@@ -1,4 +1,4 @@
-function scr_dim_playerstate_free_ytopurok(){
+function scr_playerstate_gg(){
 //визначення швидкості руху персонажа (біг, спокійна хотьба)
 if(status = STATUS.ACTIVE){
 	if (run == 0 or InRoomMode = true) {spd = walkspd;}
@@ -31,18 +31,14 @@ if(status = STATUS.ACTIVE){
 	}
 	
 }
-
-sprit="Ytopurok";
-
 // анімація ходьби по вертикалі відповідно до останнього напрямку руху по горизонталі
 
+if (y!=yprevious && lastmove==0) {sprite_index = asset_get_index( "spr_dim_" + sprit +"_move_right_new");}
+if (y!=yprevious && lastmove==1) {sprite_index = asset_get_index( "spr_dim_" + sprit + "_move_left_new");}
 
-if (y!=yprevious && lastmove==0) {sprite_index = asset_get_index( "spr_dim_" + sprit +"_move_right_new1");}
-if (y!=yprevious && lastmove==1) {sprite_index = asset_get_index( "spr_dim_" + sprit + "_move_left_new1");}
-
-if (x>xprevious){ sprite_index = asset_get_index("spr_dim_" + sprit +"_move_right_new1");
+if (x>xprevious){ sprite_index = asset_get_index("spr_dim_" + sprit +"_move_right_new");
 lastmove = 0;}
-if (x<xprevious){ sprite_index = asset_get_index("spr_dim_" + sprit + "_move_left_new1");
+if (x<xprevious){ sprite_index = asset_get_index("spr_dim_" + sprit + "_move_left_new");
 lastmove = 1;}	
 
 // БІГ вправо і вліво

@@ -1,6 +1,4 @@
-/// @description Insert description here
-// You can write your code in this editor
-/// @description Insert description here
+/// @description Натикання на НПС
 if (last_active)
 {
 	status=STATUS.ACTIVE;
