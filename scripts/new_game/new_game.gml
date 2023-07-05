@@ -50,4 +50,5 @@ global.day = 1;
 global.sekta = true;
 global.inventory = false;
 global.pause = false;	
+global.master = 1;
 }

@@ -464,7 +464,7 @@ yy = 0; repeat(ds_height){
 		if(inputting and yy == menu_option[page]){ c = c_yellow; }
 		//draw_line_width(rtx, rty, rtx +len, rty, 2);
 		//draw_circle_color(rtx + (circle_pos*len), rty, 4, c,c, false);
-		draw_sprite_ext(spr_slider1, 0, rtx + 203, rty + 143-18, 1, 1, 0, c_white, 1);
+		draw_sprite_ext(spr_slider1_act2, 0, rtx + 203, rty + 143-18, 1, 1, 0, c_white, 1);
 		draw_sprite_ext(spr_slider_mini, 0, rtx + 203 + (circle_pos*len), rty + 143-18, 1, 1, 0, c_white, 1);
 		
 		//draw_text_color(rtx + (len * 1.2), rty,string(floor(circle_pos*100))+"%", c,c,c,c, 1);
