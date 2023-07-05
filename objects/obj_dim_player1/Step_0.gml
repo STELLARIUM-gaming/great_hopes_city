@@ -48,13 +48,14 @@ if (global.dialogue_move = true){
 switch(state){
 	case	PLAYERSTATE.FREE	: scr_playerstate_gg();	break;
 	case	PLAYERSTATE.BUY		: scr_after_shop_anim_ytopur(buing_spr,seller_spr,seller_spr_default,seller_obj);break;
-	case	PLAYERSTATE.VODA	: scr_dim_playerstate_voda();			break;
-	case	PLAYERSTATE.LAVKA1	: scr_dim_playerstate_Lavka("1");		break; 
-	case	PLAYERSTATE.LAVKA2	: scr_dim_playerstate_Lavka("2");		break; 
-	case	PLAYERSTATE.LAVKA3	: scr_dim_playerstate_Lavka("3");		break; 
-	case	PLAYERSTATE.LAVKA4	: scr_dim_playerstate_Lavka("4");		break; 
-	case	PLAYERSTATE.SMOKE	: scr_dim_playerstate_smoke();			break;
-	case	PLAYERSTATE.ACLAVKA	: scr_dim_playerstate_AcLavka(l)			break;
+	//case	PLAYERSTATE.VODA	: scr_dim_playerstate_voda();			break;
+	//case	PLAYERSTATE.LAVKA1	: scr_dim_playerstate_Lavka("1");		break; 
+	//case	PLAYERSTATE.LAVKA2	: scr_dim_playerstate_Lavka("2");		break; 
+	//case	PLAYERSTATE.LAVKA3	: scr_dim_playerstate_Lavka("3");		break; 
+	//case	PLAYERSTATE.LAVKA4	: scr_dim_playerstate_Lavka("4");		break; 
+	//case	PLAYERSTATE.SMOKE	: scr_dim_playerstate_smoke();			break;
+	//case	PLAYERSTATE.ACLAVKA	: scr_dim_playerstate_AcLavka(l)		break;
+	case	PLAYERSTATE.ACTIVITIES: scr_playerstate_activity()	break;
  } 
 
 //система записування координат проходження

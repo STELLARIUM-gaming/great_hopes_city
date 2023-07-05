@@ -9,12 +9,12 @@ if(place_meeting(x, y+zone_y, obj_dim_player1) or place_meeting(x, y+zone_y, obj
 		if (in_place and start =0 and global.zaniatui = false){
 				start =1; //потрібно для нормального виходу з анімації (інакше йде зациклення бо ГГ завжди in_place)
 				//	image_index=0;
-			if (state != PLAYERSTATE.LAVKA1){
-				state = PLAYERSTATE.LAVKA1
-				image_index=0;
-				sprite_index=spr_Ytopurok_sit_lav_1;
-				alarm[0]=room_speed*10;
-				}
+					if (activities!=ACTIVITIES_GG.LAVKA1){
+						activities=ACTIVITIES_GG.LAVKA1
+						image_index=0;
+						sprite_index=spr_Ytopurok_sit_lav_1;
+						alarm[0]=room_speed*10;
+						}
 		}
 }
 	with (obj_dim_player2){

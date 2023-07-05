@@ -1,12 +1,13 @@
 /// @description activity
-
-switch (state)
+state = PLAYERSTATE.ACTIVITIES;
+switch (activities)
 {
-	case PLAYERSTATE.LAVKA1 :
-	case PLAYERSTATE.LAVKA2 : 
+	case ACTIVITIES_GG.LAVKA1 :
+	case ACTIVITIES_GG.LAVKA2 : 
 //	case PLAYERSTATE.LAVKA3 : 
-	case PLAYERSTATE.LAVKA4 : 
-	state =  PLAYERSTATE.ACLAVKA;
+	case ACTIVITIES_GG.LAVKA4 : 
+	//state =  PLAYERSTATE.ACLAVKA;
+	activities = ACTIVITIES_GG.ACLAVKA;
 	image_index=0;
 	break
 	case PLAYERSTATE.FREE:

@@ -9,7 +9,7 @@ PASSIVE,
 NONE,
 }
 
-state=PLAYERSTATE.FREE;
+state = PLAYERSTATE.FREE;
 enum PLAYERSTATE{
 FREE,
 BUY,
@@ -20,10 +20,18 @@ LAVKA2,
 LAVKA3,
 LAVKA4,
 ACLAVKA,
-SMOKE
+SMOKE,
+ACTIVITIES
 }
 
-
-// МУзонЧІК
-audio_listener_set_position(0,x,y,0);
-audio_listener_set_orientation(0,0,1,0,0,0,1);
+activities = ACTIVITIES_GG.NOONE;
+enum ACTIVITIES_GG{
+NOONE,
+VODA, 
+LAVKA1,
+LAVKA2,
+LAVKA3,
+LAVKA4,
+ACLAVKA,
+SMOKE
+}

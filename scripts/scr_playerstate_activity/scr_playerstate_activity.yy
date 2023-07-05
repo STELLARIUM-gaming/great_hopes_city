@@ -1,11 +1,11 @@
 {
   "resourceType": "GMScript",
   "resourceVersion": "1.0",
-  "name": "scr_dim_playerstate_stay",
+  "name": "scr_playerstate_activity",
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "States",
-    "path": "folders/Players_obj/States.yy",
+    "name": "States_script",
+    "path": "folders/Players_obj/States_script.yy",
   },
 }

@@ -5,7 +5,7 @@
   "isCompatibility": false,
   "isDnD": false,
   "parent": {
-    "name": "States",
-    "path": "folders/Players_obj/States.yy",
+    "name": "States_script",
+    "path": "folders/Players_obj/States_script.yy",
   },
 }
