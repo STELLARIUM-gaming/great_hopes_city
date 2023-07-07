@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_slider_mini_settings",
+  "name": "obj_slider_settings_2",
   "eventList": [],
   "managed": true,
   "overriddenProperties": [],
@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_slider_mini",
-    "path": "sprites/spr_slider_mini/spr_slider_mini.yy",
+    "name": "spr_slider1",
+    "path": "sprites/spr_slider1/spr_slider1.yy",
   },
   "spriteMaskId": null,
   "visible": true,
