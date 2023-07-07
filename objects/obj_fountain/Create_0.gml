@@ -1,8 +1,9 @@
-/// @description Insert description here
-// You can write your code in this editor
-
-// Inherit the parent event
 event_inherited();
 
-audio_falloff_set_model(audio_falloff_linear_distance);
-audio_play_sound_at(snd_fountain,x,y,0,300,900,1,1,3,global.Fon_sound_gain);
+// Встановлюємо модель затухання звуку
+var falloffModel = audio_falloff_linear_distance;
+audio_falloff_set_model(falloffModel);
+
+// Відтворюємо звуковий ефект фонтану з заданими параметрами
+var soundGain = global.Fon_sound_gain;
+audio_play_sound_at(snd_fountain, x, y, 0, 300, 900, 1, 1, 3, soundGain);
