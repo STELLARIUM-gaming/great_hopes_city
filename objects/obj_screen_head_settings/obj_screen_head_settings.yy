@@ -7,7 +7,7 @@
   "overriddenProperties": [],
   "parent": {
     "name": "Settings",
-    "path": "folders/Main Menu/Pause/Obj_pause/Settings.yy",
+    "path": "folders/Menu and pause/Pause/Obj_pause/Settings.yy",
   },
   "parentObjectId": {
     "name": "obj_manager_settings_pause",

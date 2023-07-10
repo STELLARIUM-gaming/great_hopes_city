@@ -44,26 +44,12 @@ switch(current_block)
 {
 	case 1: // menu
 	{
-		obj_pause_settings.visible = false;
-		obj_slider_settings_1.visible = false;
-		obj_slider_settings_2.visible = false;
-		obj_slider_settings_3.visible = false;
-		obj_slider_mini_settings_1.visible = false;
-		obj_slider_mini_settings_2.visible = false;
-		obj_slider_mini_settings_3.visible = false;
-		obj_audio2_head_settings.visible = false;
-		obj_music_head_settings.visible = false;
-		obj_audio_head_settings.visible = false;
-		obj_sounds_head_settings.visible = false;
-		
-		
-		
+		scr_settings_pause(false);
 		switch(global.LANGUAGE)            // Вивід кнопок
 		{
 		  case "eng":
 		  {
 		    obj_savings.sprite_index = spr_savings_eng_d1;
-		    //obj_settings.sprite_index = spr_settings_eng_d1;
 		    switch(position)
 		    {
 		      case 1:
@@ -105,12 +91,12 @@ switch(current_block)
 		  case "ua":
 		  {
 		    obj_savings.sprite_index = spr_savings_ukr_d1;
-		    //obj_settings.sprite_index = spr_settings_ukr_d1;
-		    switch(position)
+			switch(position)
 		    {
 		      case 1:
 		      {
 		        obj_continues.sprite_index = spr_continue_ukr_l;
+				obj_settings.sprite_index = spr_settings_ukr_d;
 		        obj_main_menus.sprite_index = spr_main_menu_ukr_d;
 		        obj_exits.sprite_index = spr_exit_ukr_d;
 		        break;
@@ -118,19 +104,28 @@ switch(current_block)
 		      case 2:
 		      {
 		        obj_continues.sprite_index = spr_continue_ukr_d;
-		        obj_main_menus.sprite_index = spr_main_menu_ukr_l;
+				obj_settings.sprite_index = spr_settings_ukr_l;
+		        obj_main_menus.sprite_index = spr_main_menu_ukr_d;
 		        obj_exits.sprite_index = spr_exit_ukr_d;
 		        break;
 		      }
 		      case 3:
 		      {
 		        obj_continues.sprite_index = spr_continue_ukr_d;
+				obj_settings.sprite_index = spr_settings_ukr_d;
+		        obj_main_menus.sprite_index = spr_main_menu_ukr_l;
+		        obj_exits.sprite_index = spr_exit_ukr_d;
+		        break;
+		      }
+		      case 4:
+		      {
+		        obj_continues.sprite_index = spr_continue_ukr_d;
+				obj_settings.sprite_index = spr_settings_ukr_d;
 		        obj_main_menus.sprite_index = spr_main_menu_ukr_d;
 		        obj_exits.sprite_index = spr_exit_ukr_l;
 		        break;
 		      }
 		    }
-        
 		  }
 		}
 		break;	
@@ -138,6 +133,7 @@ switch(current_block)
 	
 	case 2: // settings
 	{
+		scr_settings_pause(true);
 		if(!input)
 		{
 			switch(position)
@@ -171,97 +167,9 @@ switch(current_block)
 			cur_slider.sprite_index = spr_slider1_act2;
 		}
 
-		obj_pause_settings.visible = true;
-		obj_slider_settings_1.visible = true;
-		obj_slider_settings_2.visible = true;
-		obj_slider_settings_3.visible = true;
-		obj_slider_mini_settings_1.visible = true;
-		obj_slider_mini_settings_2.visible = true;
-		obj_slider_mini_settings_3.visible = true;
-		obj_audio2_head_settings.visible = true;
-		obj_music_head_settings.visible = true;
-		obj_audio_head_settings.visible = true;
-		obj_sounds_head_settings.visible = true;
-		
 		obj_slider_mini_settings_1.x = global.master * 314 + 987.5;
 		obj_slider_mini_settings_2.x = global.player_gain * 314 + 987.5;
 		obj_slider_mini_settings_3.x = global.Fon_sound_gain * 314 + 987.5;
-
-		switch(global.LANGUAGE)             
-		// Вивід кнопок
-		{
-		  case "eng":
-		  {
-		    obj_savings.sprite_index = spr_savings_eng_d1;
-		    switch(pos_set)
-		    {
-		      case 1:
-		      {
-		        obj_continues.sprite_index = spr_continue_eng_l;
-				obj_settings.sprite_index = spr_settings_eng_d;
-		        obj_main_menus.sprite_index = spr_main_menu_eng_d;
-		        obj_exits.sprite_index = spr_exit_eng_d;
-		        break;
-		      }
-		      case 2:
-		      {
-		        obj_continues.sprite_index = spr_continue_eng_d;
-				obj_settings.sprite_index = spr_settings_eng_l;
-		        obj_main_menus.sprite_index = spr_main_menu_eng_d;
-		        obj_exits.sprite_index = spr_exit_eng_d;
-		        break;
-		      }
-		      case 3:
-		      {
-		        obj_continues.sprite_index = spr_continue_eng_d;
-				obj_settings.sprite_index = spr_settings_eng_d;
-		        obj_main_menus.sprite_index = spr_main_menu_eng_l;
-		        obj_exits.sprite_index = spr_exit_eng_d;
-		        break;
-		      }
-		      case 4:
-		      {
-		        obj_continues.sprite_index = spr_continue_eng_d;
-				obj_settings.sprite_index = spr_settings_eng_d;
-		        obj_main_menus.sprite_index = spr_main_menu_eng_d;
-		        obj_exits.sprite_index = spr_exit_eng_l;
-		        break;
-		      }
-		    }
-		  break;
-		  }
-  
-		  case "ua":
-		  {
-		    obj_savings.sprite_index = spr_savings_ukr_d1;
-		    //obj_settings.sprite_index = spr_settings_ukr_d1;
-		    switch(position)
-		    {
-		      case 1:
-		      {
-		        obj_continues.sprite_index = spr_continue_ukr_l;
-		        obj_main_menus.sprite_index = spr_main_menu_ukr_d;
-		        obj_exits.sprite_index = spr_exit_ukr_d;
-		        break;
-		      }
-		      case 2:
-		      {
-		        obj_continues.sprite_index = spr_continue_ukr_d;
-		        obj_main_menus.sprite_index = spr_main_menu_ukr_l;
-		        obj_exits.sprite_index = spr_exit_ukr_d;
-		        break;
-		      }
-		      case 3:
-		      {
-		        obj_continues.sprite_index = spr_continue_ukr_d;
-		        obj_main_menus.sprite_index = spr_main_menu_ukr_d;
-		        obj_exits.sprite_index = spr_exit_ukr_l;
-		        break;
-		      }
-		    }
-        
-		  }
-		}
 		break;	
 	}
 	

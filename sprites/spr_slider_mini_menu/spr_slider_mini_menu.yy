@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "new settings",
-    "path": "folders/Main Menu/sprites/new settings.yy",
+    "path": "folders/Menu and pause/sprites/new settings.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

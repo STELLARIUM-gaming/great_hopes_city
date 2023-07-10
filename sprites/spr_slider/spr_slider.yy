@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "ukr",
-    "path": "folders/Main Menu/Pause/sprites/audio/ukr.yy",
+    "path": "folders/Menu and pause/Pause/sprites/audio/ukr.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

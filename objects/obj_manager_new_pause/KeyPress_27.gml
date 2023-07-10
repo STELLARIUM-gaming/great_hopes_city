@@ -1,6 +1,12 @@
 if(global.pause)
 {
-	if(current_block == 2) {current_block = 1; position = 2; exit;}
+	if(current_block == 2)
+	{
+		current_block = 1; 
+		position = 2; 
+		input = 0; 
+		exit;
+	}
 	resume_game();
 }
 

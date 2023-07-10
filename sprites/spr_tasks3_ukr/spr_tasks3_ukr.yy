@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "spr_pause",
-    "path": "folders/Main Menu/Pause/spr_pause.yy",
+    "path": "folders/Menu and pause/Pause/spr_pause.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

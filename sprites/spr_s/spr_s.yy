@@ -26,7 +26,7 @@
   "origin": 4,
   "parent": {
     "name": "sprites",
-    "path": "folders/Main Menu/Pause/sprites.yy",
+    "path": "folders/Menu and pause/Pause/sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

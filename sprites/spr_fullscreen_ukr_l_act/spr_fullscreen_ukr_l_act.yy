@@ -26,7 +26,7 @@
   "origin": 9,
   "parent": {
     "name": "ukr",
-    "path": "folders/Main Menu/Pause/sprites/graphic/ukr.yy",
+    "path": "folders/Menu and pause/Pause/sprites/graphic/ukr.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

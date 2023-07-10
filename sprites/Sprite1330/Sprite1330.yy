@@ -26,7 +26,7 @@
   "origin": 0,
   "parent": {
     "name": "eng",
-    "path": "folders/Main Menu/Pause/sprites/audio/eng.yy",
+    "path": "folders/Menu and pause/Pause/sprites/audio/eng.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

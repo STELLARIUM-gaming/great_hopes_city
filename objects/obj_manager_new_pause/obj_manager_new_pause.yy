@@ -16,8 +16,8 @@
   "managed": true,
   "overriddenProperties": [],
   "parent": {
-    "name": "Main Menu",
-    "path": "folders/Main Menu.yy",
+    "name": "Menu and pause",
+    "path": "folders/Menu and pause.yy",
   },
   "parentObjectId": null,
   "persistent": true,

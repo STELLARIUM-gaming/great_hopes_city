@@ -26,7 +26,7 @@
   "origin": 1,
   "parent": {
     "name": "eng",
-    "path": "folders/Main Menu/Pause/sprites/graphic/eng.yy",
+    "path": "folders/Menu and pause/Pause/sprites/graphic/eng.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

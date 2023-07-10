@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Pause",
-    "path": "folders/Main Menu/Pause.yy",
+    "path": "folders/Menu and pause/Pause.yy",
   },
 }

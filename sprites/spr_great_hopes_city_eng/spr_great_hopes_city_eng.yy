@@ -49,7 +49,7 @@
   "origin": 4,
   "parent": {
     "name": "sprites",
-    "path": "folders/Main Menu/sprites.yy",
+    "path": "folders/Menu and pause/sprites.yy",
   },
   "preMultiplyAlpha": false,
   "sequence": {

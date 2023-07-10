@@ -6,6 +6,6 @@
   "isDnD": false,
   "parent": {
     "name": "Obj Menu",
-    "path": "folders/Main Menu/Obj Menu.yy",
+    "path": "folders/Menu and pause/Obj Menu.yy",
   },
 }
