@@ -64,3 +64,6 @@ global.mapsi = 0;
 
 //display_reset(0, true);
 
+global.rezolution = 2;
+global.fullscreen = true;
+

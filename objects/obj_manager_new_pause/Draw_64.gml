@@ -42,10 +42,10 @@ switch(global.LANGUAGE)                    // Вивід газети
 
 switch(current_block)
 {
-	case 1: // menu
+	case 1:																// menu
 	{
 		scr_settings_pause(false);
-		switch(global.LANGUAGE)            // Вивід кнопок
+		switch(global.LANGUAGE)		// Вивід кнопок
 		{
 		  case "eng":
 		  {
@@ -131,32 +131,75 @@ switch(current_block)
 		break;	
 	}
 	
-	case 2: // settings
+	case 2:																// settings
 	{
+		scr_resolution(global.rezolution);
+		scr_fullscreen_pause(global.fullscreen);
 		scr_settings_pause(true);
 		if(!input)
 		{
 			switch(position)
 			{
-				case 1:
+				case 1:				// audio
 				{
 					obj_slider_settings_1.sprite_index = spr_slider1_act1;
 					obj_slider_settings_2.sprite_index = spr_slider1; 
-					obj_slider_settings_3.sprite_index = spr_slider1; 
+					//obj_slider_settings_3.sprite_index = spr_slider1; 
 					break;
 				}
 				case 2:
 				{
-					obj_slider_settings_2.sprite_index = spr_slider1_act1;
 					obj_slider_settings_1.sprite_index = spr_slider1; 
+					obj_slider_settings_2.sprite_index = spr_slider1_act1;
 					obj_slider_settings_3.sprite_index = spr_slider1; 
 					break;
 				}
 				case 3:
 				{
-					obj_slider_settings_3.sprite_index = spr_slider1_act1;
-					obj_slider_settings_1.sprite_index = spr_slider1; 
-					obj_slider_settings_2.sprite_index = spr_slider1; 
+					//obj_slider_settings_1.sprite_index = spr_slider1; 
+					obj_slider_settings_2.sprite_index = spr_slider1;
+					obj_slider_settings_3.sprite_index = spr_slider1_act1; 
+					break;
+				}
+				
+				
+				
+				case 4:				// graphic
+				{
+					obj_slider_settings_3.sprite_index = spr_slider1; 
+					
+					obj_res1_settings_l.sprite_index = res1_act_spr;
+					obj_res2_settings_l.sprite_index = res2_spr;
+
+					break;
+				}
+				case 5:
+				{
+					obj_res1_settings_l.sprite_index = res1_spr;
+					obj_res2_settings_l.sprite_index = res2_act_spr;
+					obj_res3_settings_l.sprite_index = res3_spr;
+
+					break;
+				}
+				case 6:
+				{
+					obj_res2_settings_l.sprite_index = res2_spr;
+					obj_res3_settings_l.sprite_index = res3_act_spr;
+					obj_fullscreen_settings.sprite_index = fullscreen_spr;
+
+					break;
+				}
+				case 7:
+				{
+					obj_res3_settings_l.sprite_index = res3_spr;
+					obj_fullscreen_settings.sprite_index = fullscreen_act_spr;
+					obj_window_settings.sprite_index = window_spr;
+					break;
+				}
+				case 8:
+				{
+					obj_fullscreen_settings.sprite_index = fullscreen_spr;
+					obj_window_settings.sprite_index = window_act_spr;
 					break;
 				}
 			}

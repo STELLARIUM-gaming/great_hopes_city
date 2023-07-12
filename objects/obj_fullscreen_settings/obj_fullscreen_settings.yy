@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_fullscreen_ukr_l",
-    "path": "sprites/spr_fullscreen_ukr_l/spr_fullscreen_ukr_l.yy",
+    "name": "spr_fullscreen_ukr",
+    "path": "sprites/spr_fullscreen_ukr/spr_fullscreen_ukr.yy",
   },
   "spriteMaskId": null,
   "visible": true,

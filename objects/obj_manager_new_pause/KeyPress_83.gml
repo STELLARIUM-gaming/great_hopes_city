@@ -14,7 +14,7 @@ switch(current_block)
 	
 	case 2:
 	{
-		if(position < 3)
+		if(position < 8)
 		{
 		  position = position + 1;
 		  break;

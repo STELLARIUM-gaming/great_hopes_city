@@ -1,4 +1,7 @@
-function scr_settings_pause(status){
+function scr_settings_pause(status) 
+{
+	
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 	
 	if(status)					// settings on
 	{
@@ -19,6 +22,17 @@ function scr_settings_pause(status){
 		obj_res1_settings_l.visible = true;
 		obj_res2_settings_l.visible = true;
 		obj_res3_settings_l.visible = true;
+		obj_fullscreen_settings.visible = true;
+		obj_window_settings.visible = true;
+		
+		obj_res1_settings_l.sprite_index = res1_spr;
+		obj_res2_settings_l.sprite_index = res2_spr;
+		obj_res3_settings_l.sprite_index = res3_spr;
+		obj_fullscreen_settings.sprite_index = fullscreen_spr;
+		obj_window_settings.sprite_index = window_spr;
+		obj_slider_settings_1.sprite_index = spr_slider1;
+		obj_slider_settings_2.sprite_index = spr_slider1;
+		obj_slider_settings_3.sprite_index = spr_slider1;
 		
 		switch(global.LANGUAGE)
 		{
@@ -81,5 +95,103 @@ function scr_settings_pause(status){
 		obj_res1_settings_l.visible = false;
 		obj_res2_settings_l.visible = false;
 		obj_res3_settings_l.visible = false;
+		obj_fullscreen_settings.visible = false;
+		obj_window_settings.visible = false;
+	}
+}
+
+function scr_resolution(status)
+{
+	switch(status)
+	{
+		case 0:
+		{
+			window_set_size(1280,1024);
+			global.rezolution = 0; 
+			res1_spr = spr_rez1_on; 
+			res2_spr = spr_rez2;
+			res3_spr = spr_rez3; 
+			res1_act_spr = spr_rez1_on_act;
+			res2_act_spr = spr_rez2_act;
+			res3_act_spr = spr_rez3_act;
+			break;
+		}
+		
+		case 1:
+		{
+			window_set_size(1680,1050);
+			global.rezolution = 1; 
+			res1_spr = spr_rez1; 
+			res2_spr = spr_rez2_on;
+			res3_spr = spr_rez3; 
+			res1_act_spr = spr_rez1_act;
+			res2_act_spr = spr_rez2_on_act;
+			res3_act_spr = spr_rez3_act;
+			break;
+		}
+		
+		case 2:
+		{
+			window_set_size(1920,1080);
+			global.rezolution = 2; 
+			res1_spr = spr_rez1; 
+			res2_spr = spr_rez2;
+			res3_spr = spr_rez3_on; 
+			res1_act_spr = spr_rez1_act;
+			res2_act_spr = spr_rez2_act;
+			res3_act_spr = spr_rez3_on_act;
+			break;
+		}
+		
+	}
+}
+
+function scr_fullscreen_pause(status)
+{
+	switch(status)
+	{
+		case 0:
+		{
+			window_set_fullscreen(false);
+			global.fullscreen = 0;
+			if(global.LANGUAGE == "eng")
+			{
+				fullscreen_spr = spr_fullscreen_eng;
+				fullscreen_act_spr = spr_fullscreen_eng_act;
+				window_spr = spr_windowmode_eng_on;
+				window_act_spr = spr_windowmode_eng_on_act;
+			}
+		
+			else
+			{
+				fullscreen_spr = spr_fullscreen_ukr;
+				fullscreen_act_spr = spr_fullscreen_ukr_act;
+				window_spr = spr_windowmode_ukr_on;
+				window_act_spr = spr_windowmode_ukr_on_act;
+			}
+			break;
+		}
+		
+		case 1:
+		{
+			window_set_fullscreen(true);
+			global.fullscreen = 1;
+			if(global.LANGUAGE == "eng")
+			{
+				fullscreen_spr = spr_fullscreen_eng_on;
+				fullscreen_act_spr = spr_fullscreen_eng_on_act;
+				window_spr = spr_windowmode_eng;
+				window_act_spr = spr_windowmode_eng_act;
+			}
+		
+			else
+			{
+				fullscreen_spr = spr_fullscreen_ukr_on;
+				fullscreen_act_spr = spr_fullscreen_ukr_on_act;
+				window_spr = spr_windowmode_ukr;
+				window_act_spr = spr_windowmode_ukr_act;
+			}
+			break;
+		}
 	}
 }

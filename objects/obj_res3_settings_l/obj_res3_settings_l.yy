@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_rez3_l",
-    "path": "sprites/spr_rez3_l/spr_rez3_l.yy",
+    "name": "spr_rez3",
+    "path": "sprites/spr_rez3/spr_rez3.yy",
   },
   "spriteMaskId": null,
   "visible": true,

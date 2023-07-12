@@ -246,10 +246,10 @@ switch(menu_pages[page])
 				//ds_grid[# 0, yy] = spr_rez1_d;
 				//ds_grid[# 0, yy+1] = spr_rez2_l;
 				//ds_grid[# 0, yy+2] = spr_rez3_l;
-					obj_res1_settings_l.sprite_index = spr_rez1_d;
+					obj_res1_settings_l.sprite_index = spr_rez1_on;
 
 				c = make_color_rgb(36, 34, 17);
-			}else {obj_res1_settings_l.sprite_index = spr_rez1_l2; }
+			}else {obj_res1_settings_l.sprite_index = spr_rez1; }
 		}
 		
 		//if(ds_grid[# 0, yy] == "1680х1050")

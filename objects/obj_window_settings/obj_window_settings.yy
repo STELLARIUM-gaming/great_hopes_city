@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_windowmode_ukr_l",
-    "path": "sprites/spr_windowmode_ukr_l/spr_windowmode_ukr_l.yy",
+    "name": "spr_windowmode_ukr",
+    "path": "sprites/spr_windowmode_ukr/spr_windowmode_ukr.yy",
   },
   "spriteMaskId": null,
   "visible": true,
