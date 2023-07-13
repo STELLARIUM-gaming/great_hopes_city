@@ -67,7 +67,8 @@ if (x==xprevious && y==yprevious)
 		if activity=0 
 		{
 			activity = activity_pause;
-			state = PLAYERSTATE.SMOKE;
+			//state = PLAYERSTATE.SMOKE;
+			state = PLAYERSTATE.ACTIVITIES;
 		}
 	}
 }

@@ -1,6 +1,6 @@
 /// @description activity
-state = PLAYERSTATE.ACTIVITIES;
-switch (activities)
+//state = PLAYERSTATE.ACTIVITIES;
+switch (state)
 {
 	case ACTIVITIES_GG.LAVKA1 :
 	case ACTIVITIES_GG.LAVKA2 : 
@@ -12,7 +12,8 @@ switch (activities)
 	break
 	case PLAYERSTATE.FREE:
 	if (!InRoomMode){
-		state = PLAYERSTATE.SMOKE;
+		//state = PLAYERSTATE.SMOKE;
+		state = PLAYERSTATE.ACTIVITIES;
 	}
 	break
 }

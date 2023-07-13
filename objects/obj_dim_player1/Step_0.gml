@@ -55,7 +55,7 @@ switch(state){
 	//case	PLAYERSTATE.LAVKA4	: scr_dim_playerstate_Lavka("4");		break; 
 	//case	PLAYERSTATE.SMOKE	: scr_dim_playerstate_smoke();			break;
 	//case	PLAYERSTATE.ACLAVKA	: scr_dim_playerstate_AcLavka(l)		break;
-	case	PLAYERSTATE.ACTIVITIES: scr_playerstate_activity()	break;
+	case	PLAYERSTATE.ACTIVITIES: scr_playerstate_activity("0")	break;
  } 
 
 //система записування координат проходження
